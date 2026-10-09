@@ -1,0 +1,14 @@
+# core (light, no torch)
+fastapi
+uvicorn[standard]
+httpx
+pandas
+numpy
+feedparser
+yfinance
+hmmlearn
+arch
+scikit-learn
+skfolio
+tigramite
+akshare

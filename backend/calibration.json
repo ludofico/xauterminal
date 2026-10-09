@@ -1,0 +1,40 @@
+{
+  "weights": {
+    "htf": 0.0,
+    "strength": 22.5,
+    "liquidity": 0.0,
+    "smt": 22.5,
+    "dwell": 0.0,
+    "session": 0.0,
+    "fvg": 0.0,
+    "macro": 10,
+    "forecast": 10,
+    "positioning": 10,
+    "fair_value": 10
+  },
+  "min_score": 20,
+  "train": {
+    "n": 140,
+    "sharpe": 2.115543312535157,
+    "hit": 0.543,
+    "avg_bp": 9.82
+  },
+  "test": {
+    "n": 88,
+    "sharpe": 0.9087770827676107,
+    "hit": 0.511,
+    "avg_bp": 4.87
+  },
+  "baseline_test": {
+    "n": 84,
+    "sharpe": 0.871396872478579,
+    "hit": 0.512,
+    "avg_bp": 4.84
+  },
+  "samples": 451,
+  "span": [
+    "2026-09-11 18:00:00+00:00",
+    "2026-10-09 07:30:00+00:00"
+  ],
+  "horizon_bars": 16
+}

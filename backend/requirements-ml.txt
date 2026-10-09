@@ -1,0 +1,6 @@
+# On-device models. torch comes from conda-forge (no Intel-mac pip wheel >= 2.3):
+#   micromamba create -p ./.env -c conda-forge python=3.12 "pytorch>=2.6"
+transformers
+sentence-transformers
+timesfm[torch]
+lev[serve] @ git+https://github.com/InterfazeAI/lev#subdirectory=packages/lev

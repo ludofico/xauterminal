@@ -1,0 +1,29 @@
+:root {
+  --bg: #0b0d10; --card: #12161b; --line: #1f262e; --text: #e6e9ec; --mute: #7d8793;
+  --up: #2bb673; --down: #e5534b; --gold: #d4a94a; --warn: #e3a008;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f5f6f7; --card: #fff; --line: #e3e6e9; --text: #15191d; --mute: #66707a; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-size: 13px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-variant-numeric: tabular-nums; }
+.ticker { display: flex; gap: 20px; overflow-x: auto; padding: 8px 16px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.grid { display: grid; gap: 10px; padding: 10px 16px 16px; grid-template-columns: repeat(12, 1fr); grid-auto-rows: minmax(90px, auto); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 12px; overflow: hidden; min-width: 0; }
+.card h3 { margin: 0 0 8px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); font-weight: 600; }
+.c3 { grid-column: span 3; } .c4 { grid-column: span 4; } .c5 { grid-column: span 5; } .c6 { grid-column: span 6; }
+.c7 { grid-column: span 7; } .c8 { grid-column: span 8; } .c12 { grid-column: span 12; } .r2 { grid-row: span 2; } .r3 { grid-row: span 3; }
+@media (max-width: 1100px) { .grid > .card { grid-column: span 12; } }
+.up { color: var(--up); } .down { color: var(--down); } .mute { color: var(--mute); } .gold { color: var(--gold); }
+.big { font-size: 34px; font-weight: 700; line-height: 1; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 11px; border: 1px solid var(--line); margin: 0 4px 4px 0; }
+.notrade { background: color-mix(in srgb, var(--down) 15%, transparent); border-color: var(--down); color: var(--down); }
+.bar { height: 6px; background: var(--line); border-radius: 3px; position: relative; overflow: hidden; }
+.bar > i { position: absolute; top: 0; bottom: 0; }
+table { width: 100%; border-collapse: collapse; } td { padding: 3px 0; border-bottom: 1px solid var(--line); }
+.news { max-height: 520px; overflow-y: auto; } .news a { color: inherit; text-decoration: none; } .news li { padding: 6px 0; border-bottom: 1px solid var(--line); list-style: none; }
+ul { margin: 0; padding: 0; }
+input, button { font: inherit; background: var(--bg); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; }
+button { cursor: pointer; } input { width: 100%; }
